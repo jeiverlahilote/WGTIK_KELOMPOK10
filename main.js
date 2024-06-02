@@ -2,7 +2,12 @@ const strictedStreet = ['Gajah Mada', 'Hayam Wuruk', 'Sisingamangaraja', 'Pangli
 const isOdd = (data)=>{
   return !(data % 2 == 0)
 }
-
+const getNumber= (plat)=>{
+  return plat.split(' ')[1]
+}
+const isViolation = (actual, predicted)=>{
+  return actual == predicted
+}
 console.log(
     kenaRazia(27, [
       {
